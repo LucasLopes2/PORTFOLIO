@@ -41,6 +41,41 @@ header img{
   position: relative;
   
 }
+nav#menu > ul > li > a{
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+  
+}
+nav#menu > ul > li{
+  width: 15%;
+  text-align: left;
+  background-color: gray;
+  border-top: 1px solid white;
+  transition-duration:1s ;
+}
+nav#menu > ul > li:hover{
+  background-color: darkred;
+  
+}
+nav#menu > ul > li a:hover{
+  color: black;
+}
+span#burguer{
+  background-color: rgba(128, 128, 128, 0.5);
+  cursor: pointer;
+  text-align: center;
+  display: block;
+  color: white;
+  padding: 10px;
+}
+span#burguer:hover{
+  background-color: white;
+  color: black;
+}
+nav#menu{
+  display: none;
+}
 
 header p {
  font-weight: bolder;

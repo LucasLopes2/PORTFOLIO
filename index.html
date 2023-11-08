@@ -5,13 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="images/letter-l.png" type="image/x-icon">
     <link rel="stylesheet" href="estilos/mobile.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <title>Portfólio</title>
 </head>
 <body>
-    <header>
-       <menu>
-        <a href=""></a>
-       </menu>
+    
+        <span class="material-symbols-outlined" id="burguer" onclick="cliqueAqui()">menu</span>
+        <nav id="menu">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Skills</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">CV</a></li>
+            </ul>
+        </nav>
+       
+        <header>
         <img src="images/IMG_20230808_203009_101__1_-removebg-preview.png" alt="Imagem-EU">
         <p><span class="col">O</span>lá me chamo Lucas Lopes</p>
         <h2>Olá me chamo Lucas Lopes</h2>
@@ -49,7 +59,7 @@
                     <div class="card-content">
                         <p><b>HTML5</b>, ou <b>Hypertext Markup Language 5</b>, é a versão mais recente da linguagem de marcação amplamente usada para criar e estruturar conteúdo na web</p>
                         <br>
-                        <p><strong>Aprendi da melhor forma de ensinamento do</strong> <a href="https://www.cursoemvideo.com/" target="_blank">Curso em Video</a></p>
+                        <p><strong>Aprendi da melhor forma de ensinamento do</strong> <a href="https://www.cursoemvideo.com/" target="_blank">Curso <br>em Video</a></p>
                     </div>
                 </div>
                 <br>
@@ -59,7 +69,7 @@
                         
                         <p><b>CSS3</b> é a terceira versão do <b>CSS (Cascading Style Sheets)</b>, uma linguagem de estilo utilizada para controlar a apresentação e o layout de documentos<b> HTML</b>. O <b>CSS3</b> é uma evolução do CSS2 e traz várias melhorias e recursos adicionais.</p>
                         <br>
-                        <p><strong>Aprendi da melhor forma de ensinamento do</strong> <a href="https://www.cursoemvideo.com/" target="_blank">Curso em Video</a></p>
+                        <p><strong>Aprendi da melhor forma de ensinamento do</strong> <a href="https://www.cursoemvideo.com/" target="_blank">Curso <br>em Video</a></p>
                     </div>
                 </div>
                 <br>
@@ -69,7 +79,7 @@
                         
                         <p><b>JavaScript</b> (às vezes abreviado como <b>JS</b>) é uma linguagem de programação de alto nível amplamente utilizada para tornar as páginas da web interativas e dinâmicas.mais. </p>
                         <br>
-                        <P><b>Atualmente estudando <b>lógica de programação e algortimos com Java Script</b> no <a href="https://www.cursoemvideo.com/" target="_blank">Curso em Video</a></b></P>
+                        <P><b>Atualmente estudando <b>lógica de programação e algortimos com Java Script</b> no <a href="https://www.cursoemvideo.com/" target="_blank">Curso em <br>Video</a></b></P>
                     </div>
                 </div>
                 <br>
@@ -86,6 +96,14 @@
                 </div>
             </article>
         </section>
+       
+        <section class="projeto">
+            cards com image
+            e os projeto dentro com link
+            PROJETOS : EM BREVE
+        </section>
+    </main>
+    <footer>
         <section class="contac">
             <article>
                 <p> 
@@ -96,16 +114,19 @@
                 </p>
             </article>
         </section>
-        <section class="projeto">
-            cards com image
-            e os projeto dentro com link
-            PROJETOS : EM BREVE
-        </section>
-    </main>
-    <footer>
-
     </footer>
 
- 
+  <script>
+    function cliqueAqui(){
+        if(menu.style.display == 'block'){
+            menu.style.display = 'none'
+        }else{
+            menu.style.display = 'block'
+        }
+
+    }
+    
+   
+  </script>
 </body>
 </html>
