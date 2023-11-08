@@ -23,7 +23,11 @@ header > h1,h2{
     
   }
 }
-
+@media (max-width:768px){
+  .skills h2{
+    display: block;
+  }
+}
 header{
     width: 100%;
     text-align: center;
@@ -69,7 +73,7 @@ main{
   section.sobre{
     background-image: linear-gradient(to top, rgb(211, 11, 11), rgb(68, 67, 67));
     width: 100vw;
-    height: 66vh;
+    height: 70vh;
   }
   section.sobre p{
     font-family:Verdana, Geneva, Tahoma, sans-serif ;
@@ -130,8 +134,49 @@ main{
   background-color: #000000;
   color: white;
  }
-  
-  
+ .skills h2 {
+  padding: 20px;
+  font-family:monospace ;
+  font-size: 1.8em;
+  font-weight: bold;
+  text-decoration: overline;
+ }
+ .skills h2 > b{
+  color: red;
+  font-weight: bolder;
+ }
+ .card img{
+  width: 70px;
+  padding-top: 10px;
+ }
+ .card{
+  border: 1px solid rgba(0, 0, 0, 0.678);
+  background-color: white;
+  width: 90%;
+  margin: auto;
+  border-radius: 50%;
+ }
+ .card a{
+  color: red;
+  text-decoration: none;
+  font-weight: bolder;
+ }
+ .card a:hover{
+  color: black;
+  text-decoration: underline;
+ }
+.card-content{
+  background-color: white;
+  width: 70%;
+  margin: auto;
+  color: black;
+  padding: 30px;
+  border-radius: 50%;
+}  
+ .card-content p{
+  line-height: 1em 1;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ }
  
     
   
