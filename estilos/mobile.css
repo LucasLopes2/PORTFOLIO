@@ -27,6 +27,9 @@ header > h1,h2{
   .skills h2{
     display: block;
   }
+  .h2{
+    display: block;
+  }
 }
 header{
     width: 100%;
@@ -48,11 +51,12 @@ nav#menu > ul > li > a{
   
 }
 nav#menu > ul > li{
-  width: 15%;
-  text-align: left;
+  width: 30%;
+  text-align: center;
   background-color: gray;
   border-top: 1px solid white;
   transition-duration:1s ;
+  font-weight: bold;
 }
 nav#menu > ul > li:hover{
   background-color: darkred;
@@ -151,10 +155,7 @@ main{
     text-decoration: none;
     color:  white;
   }
- section.curriculocontac img{
-   width: 30px;
-    padding: 20px;
-  }
+ 
  .info input{
   height: 50px;
   width: 150px;
@@ -169,6 +170,7 @@ main{
   background-color: #000000;
   color: white;
  }
+ /*Sobre mim*/
  .skills h2 {
   padding: 20px;
   font-family:monospace ;
@@ -212,6 +214,176 @@ main{
   line-height: 1em 1;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
  }
- 
-    
+ /*Configuração do card do projeto*/
+ .h2{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  background-color: rgb(73, 73, 73);
+  color: white;
+  font-weight: bolder;
   
+ }
+ div.cards {
+  width: 200px;
+  height: 300px;
+  position: relative;
+  perspective: 800px;
+  margin: 0 auto; /* Adiciona margem automática para centralizar horizontalmente */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+div.frontcard, div.backcard {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  backface-visibility: hidden;
+  transition: all 1s;
+  border: 2px solid rgba(255, 255, 255, 0.753);
+  border-radius: 10px;
+ 
+}
+.frontcard{
+  background-color: rgb(16, 196, 16);
+  color: #fff;
+}
+.frontcard img{
+  width:100%;
+  height: 90%;
+}
+.backcard{
+  color: black;
+  background-color: white;
+  transform: rotateY(-180deg);
+}
+div.cards:hover .frontcard{
+  transform: rotateY(180deg);
+}
+div.cards:hover .backcard {
+  transform: rotateY(0);
+}
+#fundo{
+  background-image: linear-gradient(to bottom,green, gray);
+}
+.cardsp2{
+  
+  width: 200px;
+  height: 300px;
+  position: relative;
+  perspective: 800px;
+  margin:  auto;  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+div.frontcard2, div.backcard2 {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  backface-visibility: hidden;
+  transition: all 1s;
+  border: 2px solid rgba(255, 255, 255, 0.753);
+  border-radius: 10px;
+ 
+}
+.frontcard2{
+  background-color: rgb(80, 79, 79);
+  color: #fff;
+}
+.backcard2{
+  color: black;
+  background-color: #fff;
+  transform: rotateY(-180deg);
+}
+div.cardsp2:hover .frontcard2{
+  transform: rotateY(180deg);
+}
+div.cardsp2:hover .backcard2 {
+  transform: rotateY(0);
+}
+.frontcard2 img{
+  width: 100%;
+  height: 90%;
+}
+#fundo2{
+  background-image: linear-gradient(to bottom, gray,#504F4F );
+}
+.breve{
+  padding: 20px;
+  color: red;
+  font-size: 1.5em;
+}
+div.cardsp3 {
+  width: 200px;
+  height: 300px;
+  position: relative;
+  perspective: 800px;
+  margin: 0 auto; /* Adiciona margem automática para centralizar horizontalmente */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+div.frontcard3, div.backcard3 {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  backface-visibility: hidden;
+  transition: all 1s;
+  border: 2px solid rgba(255, 255, 255, 0.753);
+  border-radius: 10px;
+
+}
+.frontcard3{
+  background-color: rgb(80, 79, 79);
+  color: #fff;
+}
+.frontcard3 p{
+  position: relative;
+  top: 42%;
+  font-size: 1.3em;
+}
+.backcard3{
+  color: black;
+  background-color: #fff;
+  transform: rotateY(-180deg);
+}
+.backcard3 img{
+  width: 100%;
+  height: 100%;
+}
+div.cardsp3:hover .frontcard3{
+  transform: rotateY(180deg);
+}
+div.cardsp3:hover .backcard3 {
+  transform: rotateY(0);
+}
+.frontcard3 img{
+  width: 100%;
+  height: 90%;
+}
+#fundo3{
+  background-image: linear-gradient(to bottom, rgb(216, 11, 11),#442424 );
+}
+/*config cards projeto final*/
+
+.contac{
+  background-color: white;
+  width: 100vw;
+  height: 16vh;
+ 
+}
+.contac img{
+  height: 25px;
+  width: 40px;
+  margin: auto;
+  padding-left: 50px;
+  padding-top: 20%;
+  cursor: pointer;
+}
+.contac h3{
+  color: black;
+  text-align: center;
+  position: relative;
+  top: 40px;
+}
